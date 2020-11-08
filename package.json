@@ -1,0 +1,57 @@
+{
+  "name": "berttheme",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "disqus-react": "^1.0.10",
+    "fslightbox-react": "^1.5.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-countup": "^4.3.3",
+    "react-cursor-position": "^3.0.3",
+    "react-dom": "^17.0.1",
+    "react-ga": "^3.2.0",
+    "react-markdown": "^5.0.2",
+    "react-on-screen": "^2.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "react-scroll": "^1.8.1",
+    "react-slick": "^0.27.12",
+    "react-typed": "^1.2.0",
+    "react-visibility-sensor": "^5.1.1",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
