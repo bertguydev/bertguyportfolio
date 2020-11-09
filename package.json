@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.27",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "animate.css": "^4.1.1",
+    "aws-amplify": "^3.3.7",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "disqus-react": "^1.0.10",

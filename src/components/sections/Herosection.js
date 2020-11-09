@@ -34,6 +34,7 @@ function Herosection(props) {
                 "UI/UX Designer ",
                 "Front-End Developer",
                 "Wordpress Expert",
+                "Illustration Artist"
               ]}
               typeSpeed={100}
               backSpeed={80}
@@ -44,7 +45,7 @@ function Herosection(props) {
             </Typed>
           </p>
 
-          <ul className="social-icons light list-inline mb-0 mt-4">
+          {/* <ul className="social-icons light list-inline mb-0 mt-4">
             <li className="list-inline-item">
               <a href="!#">
                 <i className="fab fa-twitter"></i>
@@ -60,9 +61,9 @@ function Herosection(props) {
                 <i className="fab fa-dribbble"></i>
               </a>
             </li>
-          </ul>
+          </ul> */}
 
-          <div className="mt-4">
+          {/* <div className="mt-4">
             <Link
               className="btn btn-default"
               to="section-contact"
@@ -72,7 +73,7 @@ function Herosection(props) {
             >
               Hire me
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="scroll-down">
