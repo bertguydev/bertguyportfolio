@@ -66,7 +66,7 @@ const allData = [
   },
   {
     id: 6,
-    title: "Game Store App Concept",
+    title: "Gold & Silver Leadgen",
     category: "design",
     image: "images/gold-lead-gen.jpg",
     popupLink: [
