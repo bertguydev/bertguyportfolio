@@ -3,6 +3,7 @@ import TrackVisibility from "react-on-screen";
 import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
+import MyPDF from '../../images/bert-caivano-resume.pdf';
 
 const aboutContent = {
   name: "Bert Diego Caivano",
@@ -85,7 +86,7 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href="images/bert-caivano-resume.pdf" className="btn btn-default">
+                    <a href={MyPDF} download="bert-caivano-resume.pdf" className="btn btn-default">
                       Download CV
                     </a>
                   </div>
