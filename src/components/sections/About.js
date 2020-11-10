@@ -84,11 +84,11 @@ function About() {
               <div className="row">
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
-                  {/* <div className="mt-3">
-                    <a href="!#" className="btn btn-default">
+                  <div className="mt-3">
+                    <a href="/images/bert-caivano-resume.pdf" className="btn btn-default">
                       Download CV
                     </a>
-                  </div> */}
+                  </div>
                   <div
                     className="spacer d-md-none d-lg-none"
                     data-height="30"
