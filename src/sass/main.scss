@@ -1196,6 +1196,28 @@ footer.footer {
 	}
 }
 
+.triangle-top-sm {
+    &:before {
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #FFF;
+        position: absolute;
+        left: 10%;
+        top: -10px;
+        transform: translateX(-7.5px)
+    }
+}
+body.dark {
+    .triangle-top-sm {
+        &:before {
+            border-bottom-color: #1c354f;
+        }
+    }
+}
+
 @media (max-width: 600px) {
     .parallax, .parallax .layer {
         display: none;

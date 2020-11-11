@@ -88,27 +88,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 	.pf-filter-wrapper {
 		display: block;
 	}
-	.triangle-top-sm {
-		&:before {
-			content: '';
-			width: 0; 
-			height: 0; 
-			border-left: 10px solid transparent;
-			border-right: 10px solid transparent;
-			border-bottom: 10px solid #FFF;
-			position: absolute;
-			left: 50%;
-			top: -10px;
-			transform: translateX(-7.5px)
-		}
-	}
-	body.dark {
-		.triangle-top-sm {
-			&:before {
-				border-bottom-color: #1c354f;
-			}
-		}
-	}
+	
 }
 
 @media only screen and (min-width: 768px) {
