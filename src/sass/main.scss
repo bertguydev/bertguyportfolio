@@ -58,7 +58,20 @@ section.home {
 		max-width: 540px;
 		text-align: center;
 		position: relative;
-		z-index: 1;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .profile-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            background: url(../images/bertguy.jpg) -21px -11px;
+            background-size: 110% 110%;
+            margin: 0 0 20px;
+        }
 
 		h1 {
 			color: #FFF;
@@ -1189,5 +1202,13 @@ footer.footer {
     }
     .timeline {
         margin-bottom: 20px;
+    }
+    section.home {
+        .intro { 
+            .profile-img {
+            width: 230px;
+            height: 230px;
+            }
+        }
     }
 }
