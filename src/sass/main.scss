@@ -48,7 +48,7 @@ section {
 }
 
 section.home {
-    background: radial-gradient(circle, #0e2b4a 0%, #05457d 100%);background: radial-gradient(circle, #0e2b4a 0%, #05457d 100%);
+    background-image: url(../images/o-r.png), radial-gradient(circle, #0e2b4a 0%, #05457d 100%);
 	padding: 0;
 	height: 100vh;
 	min-height: 100vh;
