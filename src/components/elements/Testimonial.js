@@ -1,11 +1,11 @@
 import React from "react";
 
 function Testimonial({ slider }) {
-  const { avatar, userName, subtitle, review } = slider;
+  const { avatar, userName, subtitle, review, alttag } = slider;
   return (
     <div className="testimonial-item text-center mx-auto">
       <div className="thumb mb-3 mx-auto">
-        <img src={avatar} alt="customer-name" />
+        <img src={avatar} alt={alttag} />
       </div>
       <h4 className="mt-3 mb-0">{userName}</h4>
       <span className="subtitle">{subtitle}</span>
