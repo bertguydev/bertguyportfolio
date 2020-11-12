@@ -56,13 +56,13 @@ const counterData = [
   {
     id: 2,
     title: "Projects completed",
-    count: 243,
+    count: 247,
     icon: "icon-check",
   },
   {
     id: 3,
     title: "Websites I\'ve worked on",
-    count: 56,
+    count: 58,
     icon: "icon-badge",
   },
 ];
