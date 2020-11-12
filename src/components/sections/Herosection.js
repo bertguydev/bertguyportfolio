@@ -45,13 +45,13 @@ function Herosection(props) {
             </Typed>
           </p>
 
-          {/* <ul className="social-icons light list-inline mb-0 mt-4">
+          <ul className="social-icons light list-inline mb-0 mt-4">
             <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-twitter"></i>
+              <a href="https://github.com/bertguydev" target="blank" rel="noopener">
+                <i className="fab fa-github"></i>
               </a>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <a href="!#">
                 <i className="fab fa-behance"></i>
               </a>
@@ -60,8 +60,8 @@ function Herosection(props) {
               <a href="!#">
                 <i className="fab fa-dribbble"></i>
               </a>
-            </li>
-          </ul> */}
+            </li> */}
+          </ul>
 
           {/* <div className="mt-4">
             <Link
