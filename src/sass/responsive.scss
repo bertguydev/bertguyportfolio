@@ -88,7 +88,30 @@ only screen and (min-device-pixel-ratio: 1.5){
 	.pf-filter-wrapper {
 		display: block;
 	}
-	
+	.slick-dots li.slick-active button::before {
+        background: #01869C;
+        border-radius: 10px;
+        opacity: 1;
+        height: 17px;
+        width: 17px;
+    }
+    .slick-dots li button::before {
+        content: '';
+        background: #D4D4FF;
+        border-radius: 10px;
+        opacity: 1;
+        height: 17px;
+        width: 17px;
+    }
+    .slick-dots li {
+        width: unset;
+        height: unset;
+    }
+    .slick-dots li.slick-active {
+        width: unset;
+        height: unset;
+        margin: 0 8px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,7 +137,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 				border-right-color: #1c354f;
 			}
 		}
-	}
+    }
 }
 
 @media only screen and (max-width: 576px) {
