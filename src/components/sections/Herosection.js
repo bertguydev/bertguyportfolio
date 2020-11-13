@@ -51,12 +51,12 @@ function Herosection(props) {
                 <i className="fab fa-github"></i>
               </a>
             </li>
-            {/* <li className="list-inline-item">
-              <a href="!#">
-                <i className="fab fa-behance"></i>
+            <li className="list-inline-item">
+              <a href="https://www.linkedin.com/in/bert-caivano-2980b523/" target="blank" rel="noopener">
+                <i className="fab fa-linkedin"></i>
               </a>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <a href="!#">
                 <i className="fab fa-dribbble"></i>
               </a>
