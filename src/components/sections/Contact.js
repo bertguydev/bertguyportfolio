@@ -27,7 +27,13 @@ function Contact() {
     } else if (!formdata.message) {
       setError(true);
       setMessage("Message is required");
-    } else {
+    }else if (!formdata.recaptcha) {
+        setError(true);
+        setMessage("reCaptcha is required.");
+    }else if (formdata.recaptcha.success == false) {
+        setError(true);
+        setMessage("Thanks for playing have a nice day.");
+    }else {
       setError(false);
       setMessage("You message has been sent!!!");
       emailjs.send('service_1572v2b','template_cyuz4ez', formdata, 'user_s1he7ZaGEyEOKm1Yo3xPo')
@@ -135,6 +141,8 @@ function Contact() {
                 </div>
               </div>
               <ReCAPTCHA
+                    name="recaptcha"
+                    value={formdata.recaptcha}
                     sitekey="6LeBUeMZAAAAAAaM2RGjQkcB-w9u982Zs9pV6TLU"
                     onChange={handleChange}
                 />
