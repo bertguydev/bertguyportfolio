@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -131,6 +133,10 @@ function Contact() {
                   </div>
                 </div>
               </div>
+              <ReCAPTCHA
+                    sitekey="6LeBUeMZAAAAAAaM2RGjQkcB-w9u982Zs9pV6TLU"
+                    onChange={handleChange}
+                />
               <button
                 type="submit"
                 name="submit"
