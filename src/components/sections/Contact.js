@@ -93,6 +93,7 @@ function Contact() {
 
           <div className="col-md-8">
             <form
+            
               id="contact-form"
               className="contact-form mt-6"
               onSubmit={submitHandler}
@@ -103,7 +104,7 @@ function Contact() {
                     <input
                       type="text"
                       className="form-control"
-                      name="name"
+                      name="from_name"
                       id="InputName"
                       placeholder="Your name"
                       onChange={handleChange}
