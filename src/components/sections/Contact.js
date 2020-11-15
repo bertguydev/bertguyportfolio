@@ -7,7 +7,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
   const [formdata, setFormdata] = useState({
-    name: "",
+    from_name: "",
     email: "",
     subject: "",
     message: "",
@@ -18,7 +18,7 @@ function Contact() {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if (!formdata.name) {
+    if (!formdata.from_name) {
       setError(true);
       setMessage("Name is required");
     } else if (!formdata.email) {
@@ -44,6 +44,7 @@ function Contact() {
       ...formdata,
       [event.currentTarget.name]: event.currentTarget.value,
     });
+    console.log(formdata);
   };
 
   const handleAlerts = () => {
