@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
+import emailjs from 'emailjs-com';
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -21,15 +22,18 @@ function Contact() {
     } else if (!formdata.email) {
       setError(true);
       setMessage("Email is required");
-    } else if (!formdata.subject) {
-      setError(true);
-      setMessage("Subject is required");
     } else if (!formdata.message) {
       setError(true);
       setMessage("Message is required");
     } else {
       setError(false);
       setMessage("You message has been sent!!!");
+      emailjs.send('service_1572v2b','template_cyuz4ez', formdata, 'user_s1he7ZaGEyEOKm1Yo3xPo')
+    .then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+    }, (err) => {
+       console.log('FAILED...', err);
+    });
     }
   };
 
@@ -63,17 +67,17 @@ function Contact() {
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <h3>Let's talk about everything!</h3>
+                <h3>Send me a message.</h3>
               </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeInUp"
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <p>
+                {/* <p>
                   Don't like forms? Send me an{" "}
                   <a href="mailto:name@example.com">email</a>. 👋
-                </p>
+                </p> */}
               </ScrollAnimation>
             </div>
           </div>
@@ -109,20 +113,6 @@ function Contact() {
                       placeholder="Email address"
                       onChange={handleChange}
                       value={formdata.email}
-                    />
-                  </div>
-                </div>
-
-                <div className="column col-md-12">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="InputSubject"
-                      name="subject"
-                      placeholder="Subject"
-                      onChange={handleChange}
-                      value={formdata.subject}
                     />
                   </div>
                 </div>

@@ -43,9 +43,9 @@ function Homepage3() {
         {/* <Element name="section-brandlogos">
           <BrandlogosDark />
         </Element> */}
-        {/* <Element name="section-contact">
+        <Element name="section-contact">
           <Contact />
-        </Element> */}
+        </Element>
         <div className="spacer" data-height="96"></div>
       </main>
       <Footer />
