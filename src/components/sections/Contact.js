@@ -7,7 +7,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
   const [formdata, setFormdata] = useState({
-    from_name: "",
+    name: "",
     email: "",
     subject: "",
     message: "",
@@ -18,7 +18,7 @@ function Contact() {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if (!formdata.from_name) {
+    if (!formdata.name) {
       setError(true);
       setMessage("Name is required");
     } else if (!formdata.email) {
@@ -27,13 +27,7 @@ function Contact() {
     } else if (!formdata.message) {
       setError(true);
       setMessage("Message is required");
-    }else if (!formdata.recaptcha) {
-        setError(true);
-        setMessage("reCaptcha is required.");
-    }else if (formdata.recaptcha.success == false) {
-        setError(true);
-        setMessage("Thanks for playing have a nice day.");
-    }else {
+    } else {
       setError(false);
       setMessage("You message has been sent!!!");
       emailjs.send('service_1572v2b','template_cyuz4ez', formdata, 'user_s1he7ZaGEyEOKm1Yo3xPo')
@@ -50,7 +44,6 @@ function Contact() {
       ...formdata,
       [event.currentTarget.name]: event.currentTarget.value,
     });
-    console.log(formdata);
   };
 
   const handleAlerts = () => {
@@ -93,7 +86,6 @@ function Contact() {
 
           <div className="col-md-8">
             <form
-            
               id="contact-form"
               className="contact-form mt-6"
               onSubmit={submitHandler}
@@ -104,7 +96,7 @@ function Contact() {
                     <input
                       type="text"
                       className="form-control"
-                      name="from_name"
+                      name="name"
                       id="InputName"
                       placeholder="Your name"
                       onChange={handleChange}
@@ -141,12 +133,10 @@ function Contact() {
                   </div>
                 </div>
               </div>
-              <ReCAPTCHA
-                    name="recaptcha"
-                    value={formdata.recaptcha}
+              {/* <ReCAPTCHA
                     sitekey="6LeBUeMZAAAAAAaM2RGjQkcB-w9u982Zs9pV6TLU"
                     onChange={handleChange}
-                />
+                /> */}
               <button
                 type="submit"
                 name="submit"
