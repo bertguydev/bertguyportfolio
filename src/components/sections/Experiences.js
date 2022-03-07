@@ -29,14 +29,14 @@ const educationData = [
 const experienceData = [
     {
     id: 3,
-    title: "Frontend Developer/Designer",
+    title: "Frontend Developer",
     years: "2019 - Present",
     content:
       "VS Media, owners of Flirt4Free",
   },
   {
     id: 1,
-    title: "Web Designer",
+    title: "Web Developer",
     years: "2015 - 2019",
     content:
       "Goldco Precious Metals",
