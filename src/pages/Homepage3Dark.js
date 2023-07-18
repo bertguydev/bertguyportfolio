@@ -15,42 +15,43 @@ import Testimonials from "../components/sections/Testimonials";
 import Works from "../components/sections/Works";
 
 function Homepage3() {
-  document.body.classList.add("dark");
-  return (
-    <>
-      <Header3 logoSource="/images/logo.svg" />
-      <main className="content-3">
-        <Element name="section-home">
-          <ReactCursorPosition>
-            <Herosection />
-          </ReactCursorPosition>
-        </Element>
-        <Element name="section-about">
-          <About />
-        </Element>
-        <Element name="section-services">
-          <Services />
-        </Element>
-        <Element name="section-works">
-          <Works />
-        </Element>
-        <Element name="section-experiences">
-          <Experiences />
-        </Element>
-        <Element name="section-testimoninal">
-          <Testimonials />
-        </Element>
-        {/* <Element name="section-brandlogos">
+	document.body.classList.add("dark");
+	return (
+		<>
+			<Header3 logoSource="/images/logo.svg" />
+			<main className="content-3">
+				<Element name="section-home">
+					<ReactCursorPosition>
+						<Herosection />
+					</ReactCursorPosition>
+				</Element>
+				<Element name="section-about">
+					<About />
+				</Element>
+				<Element name="section-services">
+					<Services />
+				</Element>
+				<Element name="section-works">
+					<Works />
+				</Element>
+				<Element name="section-experiences">
+					<Experiences />
+				</Element>
+				<Element name="section-testimoninal">
+					<Testimonials />
+				</Element>
+				{/* <Element name="section-brandlogos">
           <BrandlogosDark />
-        </Element> */}
+        </Element>
         <Element name="section-contact">
           <Contact />
         </Element>
-        <div className="spacer" data-height="96"></div>
-      </main>
-      <Footer />
-    </>
-  );
+         */}
+				<div className="spacer" data-height="96"></div>
+			</main>
+			<Footer />
+		</>
+	);
 }
 
 export default Homepage3;
