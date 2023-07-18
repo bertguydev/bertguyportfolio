@@ -11,6 +11,7 @@
     "aws-amplify": "^3.3.7",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "create-react-app": "^5.0.0",
     "disqus-react": "^1.0.10",
     "emailjs-com": "^2.6.4",
     "fslightbox-react": "^1.5.0",
